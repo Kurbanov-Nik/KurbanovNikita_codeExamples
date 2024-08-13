@@ -25,7 +25,6 @@ def exchange_money(money, banknotes):
         if money - value <= 0:
             break
         max_index = i
-
     exchange = [0 for _ in range(0, max_index + 1)]
     exchange[0] = money
     print("Возможные варианты размена %d руб.:" % money)

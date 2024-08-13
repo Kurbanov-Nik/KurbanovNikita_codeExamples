@@ -46,7 +46,6 @@ def exchange_money(money, banknotes):
                 exchange = exchange + [1 for _ in range(money - sum(exchange[0 : mark]))]
                 yield exchange
                 iter = 1
-
         index += 1
 
 banknotes = [1, 2, 5, 10, 50, 100]
