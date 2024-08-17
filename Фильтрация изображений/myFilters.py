@@ -15,8 +15,8 @@ def circleFilter(iWidth, iHeight, fRadius):
     array = np.zeros((iHeight, iWidth))
     centerX = int(iWidth / 2)
     centerY = int(iHeight / 2)
-    for i in range(iHeight):
-        for j in range(iWidth):
+    for i in range(centerY - fRadius, centerY + fRadius):
+        for j in range(centerX - fRadius, centerX + fRadius):
             array[i][j] = round(i - centerY) ** 2 + round(j - centerX) ** 2 <= fRadius ** 2
     return array
 
